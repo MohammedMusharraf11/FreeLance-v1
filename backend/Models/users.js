@@ -16,7 +16,7 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        match: [/^[a-zA-Z0-9]+@pesu\.pes\.edu$/, 'Please provide a valid PESU college email address'],
+        match: [/^[a-zA-Z0-9]+@gncasc\.org$/, 'Please provide a valid PESU college email address'],
         trim: true
       },
       
