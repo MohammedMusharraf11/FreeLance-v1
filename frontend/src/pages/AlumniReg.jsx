@@ -94,6 +94,18 @@ function AlumniReg() {
             className="border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500"
           />
         </div>
+        {/* Qualification */}
+        <div className="flex flex-col">
+          <label htmlFor="qualification" className="text-gray-600 mb-2">Qualification</label>
+          <input
+            type="text"
+            id="qualification"
+            name="qualification"
+            value={graduationYear}
+            placeholder="Enter your Qualification"
+            className="border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500"
+          />
+        </div>
 
         {/* College Email */}
         <div className="flex flex-col">
