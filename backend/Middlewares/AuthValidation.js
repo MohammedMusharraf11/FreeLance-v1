@@ -13,7 +13,7 @@ const signupValidation = (req, res, next) => {
       'number.max': 'Graduation year must be a valid future year',
     }),
     collegeEmail: Joi.string()
-      .pattern(/^[a-zA-Z0-9]+@pesu\.pes\.edu$/)
+      .pattern(/^[a-zA-Z0-9]+@gncasc\.org$/)
       .required()
       .messages({
         'string.empty': 'College Email is required',
@@ -65,7 +65,7 @@ next();
 const loginValidation = (req, res, next) => {
     const schema = Joi.object({
       collegeEmail: Joi.string()
-        .pattern(/^[a-zA-Z0-9]+@pesu\.pes\.edu$/)
+        .pattern(/^[a-zA-Z0-9]+@gncasc\.org$/)
         .required()
         .messages({
           'string.empty': 'College Email is required',
